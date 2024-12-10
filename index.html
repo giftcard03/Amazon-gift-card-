@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon $1000 Gift Card</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffcc33, #ff6699);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .menu-btn {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .menu-btn:hover {
+      color: #ff6699;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #ff6699;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .image {
+      width: 100%;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .claim-btn {
+      display: inline-block;
+      background: #ff6699;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 10px 0;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    .claim-btn:hover {
+      background: #ffcc33;
+    }
+
+    .countdown {
+      font-size: 1.2rem;
+      color: #ff6699;
+      margin-top: 10px;
+    }
+
+    .notification {
+      background: #ffcc33;
+      color: #333;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+
+    .reviews, .offer-details {
+      text-align: left;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <button class="menu-btn" onclick="redirect()">☰</button>
+  <div class="container">
+    <h1>Win a $1000 Amazon Gift Card!</h1>
+    <img src="https://i.ibb.co/HXBVDfP/aecbb58bfded.png" alt="Amazon Gift Card" class="image">
+    <a href="#" class="claim-btn" onclick="redirect()">Claim Now</a>
+    <div class="countdown">Hurry! Offer ends in: <span id="timer">05:00</span></div>
+    <div class="notification">4578 people have already claimed this gift card!</div>
+    <div class="reviews">
+      <strong>Reviews:</strong>
+      <ul>
+        <li>"This is amazing! Got my gift card in 2 minutes!" - User A</li>
+        <li>"The process was smooth and easy." - User B</li>
+      </ul>
+    </div>
+    <div class="offer-details">
+      <strong>Offer Details:</strong>
+      <p>This gift card can be used on all Amazon products. Limited stock available!</p>
+    </div>
+  </div>
+
+  <script>
+    // Redirect to affiliate link
+    function redirect() {
+      window.location.href = "https://go4affm.com/c/?p=41639&o=20854&s1=Roili";
+    }
+
+    // Countdown Timer
+    let timer = 300; // 5 minutes
+    const timerDisplay = document.getElementById('timer');
+    setInterval(() => {
+      if (timer > 0) {
+        timer--;
+        let minutes = Math.floor(timer / 60);
+        let seconds = timer % 60;
+        timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
